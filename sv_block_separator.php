@@ -37,6 +37,31 @@
 				->set_is_responsive(true)
 				->load_type( 'border' );
 
+			$this->get_setting( 'max_width' )
+				->set_title( __( 'Max Width', 'sv100' ) )
+				->set_default_value(100)
+				->set_is_responsive(true)
+				->load_type( 'number' );
+
+			$this->get_setting( 'max_width_style_wide' )
+				->set_title( __( 'Max Width Style Wide', 'sv100' ) )
+				->set_is_responsive(true)
+				->load_type( 'number' );
+
+			return $this;
+		}
+		protected function register_scripts(): sv_block_separator {
+			parent::register_scripts();
+
+			// Register Default Styles
+			$this->get_script( 'align_left' )
+				->set_is_gutenberg()
+				->set_path( 'lib/css/common/style_align_left.css' );
+
+			$this->get_script( 'align_right' )
+				->set_is_gutenberg()
+				->set_path( 'lib/css/common/style_align_right.css' );
+
 			return $this;
 		}
 		public function enqueue_scripts(): sv_block_separator {

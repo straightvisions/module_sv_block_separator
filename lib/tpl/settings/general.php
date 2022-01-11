@@ -3,6 +3,12 @@
 		<h2><?php _e('General', 'sv100'); ?></h2>
 		<div class="sv_setting_flex">
 			<?php
+				echo $module->get_setting( 'max_width' )->form();
+				echo $module->get_setting( 'max_width_style_wide' )->form();
+			?>
+		</div>
+		<div class="sv_setting_flex">
+			<?php
 				echo $module->get_setting( 'margin' )->form();
 				echo $module->get_setting( 'padding' )->form();
 			?>
