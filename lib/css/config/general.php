@@ -15,7 +15,7 @@
 	);
 
 	echo $_s->build_css(
-		is_admin() ? '.editor-styles-wrapper .wp-block-separator:not(.is-style-wide)' : '.wp-block-separator:not(.is-style-wide)',
+		is_admin() ? '.editor-styles-wrapper .wp-block-separator:not(.is-style-wide):not(.is-style-dots)' : '.wp-block-separator:not(.is-style-wide):not(.is-style-dots)',
 		array_merge(
 			$module->get_setting('max_width')->get_css_data('max-width', '', 'px !important')
 		)
