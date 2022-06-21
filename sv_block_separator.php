@@ -51,18 +51,4 @@
 
 			return $this;
 		}
-		protected function register_scripts(): sv_block_separator {
-			parent::register_scripts();
-
-			// Register Default Styles
-			$this->get_script( 'align_left' )
-				->set_is_gutenberg()
-				->set_path( 'lib/css/common/style_align_left.css' );
-
-			$this->get_script( 'align_right' )
-				->set_is_gutenberg()
-				->set_path( 'lib/css/common/style_align_right.css' );
-
-			return $this;
-		}
 	}
