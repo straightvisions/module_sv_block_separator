@@ -12,6 +12,7 @@
 				->set_section_order(5000)
 				->set_section_icon('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><path class="cls-1" d="M24,13H0V12H24Z"/></svg>')
 				->set_block_handle('wp-block-separator')
+				->set_block_name('core/separator')
 				->get_root()
 				->add_section( $this );
 		}
