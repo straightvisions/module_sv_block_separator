@@ -10,7 +10,7 @@
 	echo $_s->build_css(
 		is_admin() ? '.editor-styles-wrapper .wp-block-separator:not(.is-style-dots)' : '.wp-block-separator:not(.is-style-dots)',
 		array_merge(
-			$module->get_setting('border')->get_css_data()
+			$module->get_setting('background_color')->get_css_data('background-color')
 		)
 	);
 

@@ -18,6 +18,12 @@
 		}
 
 		protected function load_settings(): sv_block_separator {
+			$this->get_setting( 'background_color' )
+			     ->set_title( __( 'Background Color', 'sv100' ) )
+			     ->set_default_value( '0,0,0,1' )
+			     ->set_is_responsive(true)
+			     ->load_type( 'color' );
+
 			$this->get_setting( 'margin' )
 				->set_title( __( 'Margin', 'sv100' ) )
 				->set_is_responsive(true)
@@ -33,11 +39,6 @@
 				->set_title( __( 'Padding', 'sv100' ) )
 				->set_is_responsive(true)
 				->load_type( 'margin' );
-
-			$this->get_setting( 'border' )
-				->set_title( __( 'Border', 'sv100' ) )
-				->set_is_responsive(true)
-				->load_type( 'border' );
 
 			$this->get_setting( 'max_width' )
 				->set_title( __( 'Max Width', 'sv100' ) )

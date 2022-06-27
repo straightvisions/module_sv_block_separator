@@ -1,5 +1,6 @@
 .wp-block-separator{
-    background-color:currentColor;
+    border:0;
+    height:1px;
 }
 
 .wp-block-separator.alignwide,
