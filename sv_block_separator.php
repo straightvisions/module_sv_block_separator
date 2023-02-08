@@ -20,7 +20,6 @@
 		protected function load_settings(): sv_block_separator {
 			$this->get_setting( 'background_color' )
 			     ->set_title( __( 'Background Color', 'sv100' ) )
-			     ->set_default_value( '0,0,0,1' )
 			     ->set_is_responsive(true)
 			     ->load_type( 'color' );
 
